@@ -1,0 +1,214 @@
+@-webkit-keyframes enlargeSize {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes enlargeSize {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+/* NOTE: ОБЩИЕ СТИЛИ */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background: #D0C9B7 url("../img/main-bg_green.jpg");
+}
+
+.container {
+  padding: 0 15%;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* NOTE: HEADER */
+.main-header {
+  padding-top: 80px;
+  margin-bottom: 3px;
+  min-height: 450px;
+
+  font-family: "caveat", "monotype coursiva", serif;
+  color: rgb(227, 240, 227);
+  
+  background: url("../img/bg_sunny_birch.jpg") top center;
+  -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.main-header__title {
+  margin: 0;
+
+  font-size: 70px;
+  text-align: center;
+  line-height: 90px;
+}
+
+h1.main-header__title span {
+  font-size: 130px !important;
+}
+
+.main-header__navigator ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  
+  margin: 0;
+  margin-top: 80px;
+  padding: 0;
+}
+
+.main-header__navigator-item {
+  display: inline-block;
+  
+  list-style: none;
+}
+
+.main-header__navigator-item-ref {
+  text-decoration: none;
+
+  font-size: 30px;
+  color: rgb(227, 240, 227);
+}
+
+.main-header--dark {
+  color: azure;
+  
+  background: url("../img/bg_night.jpg") top center;
+  opacity: 0.9;
+}
+
+/* NOTE: MAIN-CONTENT */
+.main-content {
+  min-height: 700px;
+  padding: 5%;
+
+  background: #D0C9B7 url("../img/main-bg_green.jpg");
+  -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.main-content__viewer {
+  padding: 30px;
+  padding-left: 60px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.main-content__viewer--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-animation: enlargeSize 2s;
+  
+          animation: enlargeSize 2s;
+  opacity: 0.8;
+}
+
+.main-content__viewer--hidden {
+  display: none;
+}
+
+.main-content__viewer-img {
+  display: inline-block;
+  
+  max-width: 45%;
+  max-height: 300px;
+}
+
+.main-content__viewer-day-story {
+  display: none;
+}
+
+.main-content__month {
+  width: 100%;
+  
+  border-collapse: collapse;
+}
+
+tr {
+  padding: 0;
+  margin: 0;
+  
+  text-align: center;
+}
+
+.main-content__day {
+  display: inline-block;
+  
+  width: 14.2857%;
+  min-height: 200px;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+  
+  text-align: center;
+}
+
+.main-content__day--pressed {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.main-content__day--working {
+  color: #4d4646;
+  
+  cursor: pointer;
+}
+
+.main-content__day--working-free {
+  color: #ea7601;
+  
+  cursor: pointer;
+}
+
+.main-content__day--working:hover,
+.main-content__day--working-free:hover {
+  -webkit-box-shadow: 0px 3px 9px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 9px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main-content__day-img {
+  height: 90px;
+}
+
+.main-content__day-description {
+  height: 100px;
+  padding-top: 10px;
+  
+  font-family: 'Architects Daughter', cursive;
+}
+
+.main-content__day-date {
+  display: block;
+  
+  font-size: 30px;
+}
+
+.main-content__day-ofweek {
+  display: block;
+}
+
+.main-content__between-weeks {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Общие классы */
+.bg--dark {
+  background: #D0C9B7 url("../img/main-bg_blue.jpg");
+}
