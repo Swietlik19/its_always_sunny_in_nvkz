@@ -1,0 +1,1 @@
+The site was created because of bad-bad weather in Siberia.. It was snowy in the end of a may. But... when the project was begun, the miracle happened! The sun appeared in the sky and a long warmness came in Novokuznetsk.
