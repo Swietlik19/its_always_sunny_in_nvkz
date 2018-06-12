@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>В Новокузнецке всегда солнечно</title>
@@ -14,7 +14,7 @@
         <nav class="main-header__navigator">
           <ul>
             <li class="main-header__navigator-item"><a href="#" class="main-header__navigator-item-ref">Главная</a></li>
-            <li class="main-header__navigator-item"><a href="#" class="main-header__navigator-item-ref">О сайте</a></li>
+            <li class="main-header__navigator-item"><a href="about.html" class="main-header__navigator-item-ref">О сайте</a></li>
             <li class="main-header__navigator-item"><a href="#" class="main-header__navigator-item-ref"></a></li>
           </ul>
         </nav>
@@ -22,25 +22,26 @@
 
       <main class="main-content">
         <div id="viewer_id" class="main-content__viewer main-content__viewer--hidden">
-          <img src="img/icon_snow.png" class="main-content__viewer-img">
-          <p class="main-content__viewer-story"></p>
+          <img src="img/icon_snow.png" class="main-content__viewer-img" alt="Story image">
+          <div class="main-content__viewer-story"></div>
         </div>
+        <nav class="main-content__nav">
+          <ul>
+            <li id="title-may18" class="main-content__nav-item main-content__nav-item--active"> Май </li>
+            <li id="title-june18" class="main-content__nav-item"> Июнь </li>
+          </ul>
+        </nav>
         
         <section class="main-content__months">
-          <table id="month-may18" class="main-content__month">
-            <tr id="week-may18-1">
-              <td class="main-content__day main-content__day--empty">
-
-              </td>
-              <td class="main-content__day main-content__day--empty">
-
-              </td>
-              <td class="main-content__day main-content__day--empty">
-
-              </td>
+          <h3 class="section-title">Месяца</h3>
+          <table id="month-may18" class="main-content__month main-content__month--visible">
+            <tr id="week-may18-1" class="main-content__weeks">
+              <td class="main-content__day main-content__day--empty"></td>
+              <td class="main-content__day main-content__day--empty"></td>
+              <td class="main-content__day main-content__day--empty"></td>
               <td id="day-may18-24" class="main-content__day main-content__day--working">
                 <div class="main-content__day-img">
-                  <img src="img/icon_snow.png" width="100" height="100">
+                  <img src="img/icon_snow.png" width="100" height="100" alt="Snow">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">24</span>
@@ -49,7 +50,7 @@
               </td>
               <td id="day-may18-25" class="main-content__day main-content__day--working">
                 <div class="main-content__day-img">
-                  <img src="img/icon_rain.png" width="100" height="100">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">25</span>
@@ -58,7 +59,7 @@
               </td>
               <td id="day-may18-26" class="main-content__day main-content__day--working-free">
                 <div class="main-content__day-img">
-                  <img src="img/icon_clouds.png" width="100" height="100">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Clouds">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">26</span>
@@ -67,7 +68,7 @@
               </td>
               <td id="day-may18-27" class="main-content__day main-content__day--working-free">
                 <div class="main-content__day-img">
-                  <img src="img/icon_sunny_clear.png" width="100" height="100">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">27</span>
@@ -75,11 +76,12 @@
                 </div>
               </td>
             </tr>
-            <tr id="between-weeks-may18-1" class="main-content__between-weeks"></tr>
-            <tr id="week-may18-2">
+            <tr><td id="between-weeks-may18-1" class="main-content__between-weeks"></td>
+            </tr>
+            <tr id="week-may18-2" class="main-content__weeks">
               <td id="day-may18-28" class="main-content__day main-content__day--working">
                 <div class="main-content__day-img">
-                  <img src="img/icon_clouds.png" width="100" height="100">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Clouds">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">28</span>
@@ -88,7 +90,7 @@
               </td>
               <td id="day-may18-29" class="main-content__day main-content__day--working">
                 <div class="main-content__day-img">
-                  <img src="img/icon_clouds.png" width="100" height="100">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Clouds">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">29</span>
@@ -97,7 +99,7 @@
               </td>
               <td id="day-may18-30" class="main-content__day main-content__day--working">
                 <div class="main-content__day-img">
-                  <img src="img/icon_rain.png" width="100" height="100">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">30</span>
@@ -106,32 +108,177 @@
               </td>
               <td id="day-may18-31" class="main-content__day main-content__day--working">
                 <div class="main-content__day-img">
-                  <img src="img/icon_rain.png" width="100" height="100">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">31</span>
                   <span class="main-content__day-ofweek">Четверг</span>
                 </div>
               </td>
-              <td class="main-content__day">
-
+              <td class="main-content__day main-content__day--empty"></td>
+              <td class="main-content__day main-content__day--empty"></td>
+              <td class="main-content__day main-content__day--empty"></td>
+            </tr>
+            <tr><td id="between-weeks-may18-2" class="main-content__between-weeks"></td>
+            </tr>
+          </table>
+          
+          <table id="month-june18" class="main-content__month">
+            <tr id="week-june18-1" class="main-content__weeks">
+              <td class="main-content__day main-content__day--empty"></td>
+              <td class="main-content__day main-content__day--empty"></td>
+              <td class="main-content__day main-content__day--empty"></td>
+              <td class="main-content__day main-content__day--empty"></td>
+              <td id="day-june18-01" class="main-content__day main-content__day--working">
+                <div class="main-content__day-img">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Cloudy">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">01</span>
+                  <span class="main-content__day-ofweek">Пятница</span>
+                </div>
               </td>
-              <td class="main-content__day">
-
+              <td id="day-june18-02" class="main-content__day main-content__day--working-free">
+                <div class="main-content__day-img">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">02</span>
+                  <span class="main-content__day-ofweek">Суббота</span>
+                </div>
               </td>
-              <td class="main-content__day">
-
+              <td id="day-june18-03" class="main-content__day main-content__day--working-free">
+                <div class="main-content__day-img">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">03</span>
+                  <span class="main-content__day-ofweek">Воскресенье</span>
+                </div>
               </td>
-            <tr>
-            <tr id="between-weeks-may18-2" class="main-content__between-weeks"></tr>
+            </tr>
+            <tr><td id="between-weeks-june18-1" class="main-content__between-weeks"></td>
+            </tr>
+            <tr id="week-june18-2" class="main-content__weeks">
+              <td id="day-june18-04" class="main-content__day main-content__day--working">
+                <div class="main-content__day-img">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Cloudy">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">04</span>
+                  <span class="main-content__day-ofweek">Понедельник</span>
+                </div>
+              </td>
+              <td id="day-june18-05" class="main-content__day main-content__day--working">
+                <div class="main-content__day-img">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">05</span>
+                  <span class="main-content__day-ofweek">Вторник</span>
+                </div>
+              </td>
+              <td id="day-june18-06" class="main-content__day main-content__day--working">
+                <div class="main-content__day-img">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">06</span>
+                  <span class="main-content__day-ofweek">Среда</span>
+                </div>
+              </td>
+              <td id="day-june18-07" class="main-content__day main-content__day--working">
+                <div class="main-content__day-img">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">07</span>
+                  <span class="main-content__day-ofweek">Четверг</span>
+                </div>
+              </td>
+              <td id="day-june18-08" class="main-content__day main-content__day--working">
+                <div class="main-content__day-img">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">08</span>
+                  <span class="main-content__day-ofweek">Пятница</span>
+                </div>
+              </td>
+              <td id="day-june18-09" class="main-content__day main-content__day--working">
+                <div class="main-content__day-img">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                </div>
+                <div class="main-content__day-description">
+                  <span class="main-content__day-date">09</span>
+                  <span class="main-content__day-ofweek">Суббота</span>
+                </div>
+              </td>
+              <td class="main-content__day main-content__day--empty"></td>
+            </tr>
+            <tr><td id="between-weeks-june18-2" class="main-content__between-weeks"></td>
+            </tr>
           </table>
         </section>
       </main>
 
       <footer class="main-footer">
-
+        <section class="main-footer__info">
+        <h3 class="section-title">Информация о разработчике</h3>
+        <p class="main-footer__info-name"> Любовь Найман</p>
+        <dl>
+          <dt>email:</dt><dd><a href="mailto:citymnk@gmail.com"> citymnk@gmail.com</a></dd>
+          <dt>github:</dt><dd><a href="https://github.com/Swietlik19" class="main-footer__icon main-footer__icon--github" target="_blank">Swietlik19</a></dd>
+        </dl>
+        </section>
       </footer>
     </div>
+    
+    <!-- Спрятанные истории, которые потом выводятся в .main-content__viewer-story -->
+    <section class="stories">
+      <!-- Май -->
+      <p id="story-may18-24" class="stories__item">
+        А снег ложился на ромашки,<br>
+        Сливаясь с утренней росой;<br>
+        Замолкли в изумленье пташки<br>
+        Перед невиданной красой<br><br>
+        <cite>Рената Юрьева</cite>
+      </p>
+      <p id="story-may18-25" class="stories__item">
+        Я накинул дождевик<br>
+        — Дождик всхлипнул и поник.<br>
+        Сапоги я натянул —<br>
+        Он обиженно вздохнул.<br>
+        А когда я вынул зонт —<br>
+        Он сбежал за горизонт.<br><br>
+        <cite>Валентин Берестов</cite>
+      </p>
+       
+      <p id="story-may18-30" class="stories__item">
+        Вот две капли дождевые<br>
+        На стекле.<br>
+        Они живые.<br>
+        Кто скорей домчится вниз,<br>
+        Та получит первый приз.<br><br>
+        <cite>Алан Милн</cite>
+      </p>
+      <p id="story-may18-31" class="stories__item">
+        Розы съёжились, будто от скуки.<br>
+        Слаб их запах и цвет бледноват.<br>
+        Дождевые хрустальные звуки<br>
+        За стеклом монотонно звучат.<br><br>
+        <cite>Юрий Тарасенко</cite>
+      </p>
+      
+      <!-- Июнь -->
+      <p id="story-june18-08" class="stories__item">
+        Природа… Что с неё возьмёшь?<br>
+        Сменив внезапно гнев на милость,<br>
+        С улыбкой солнце появилось.<br>
+        Уже подсохло… Был ли дождь?..<br><br>
+        <cite>С. Фатулёв</cite>
+      </p>
+    </section>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
