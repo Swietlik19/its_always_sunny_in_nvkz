@@ -15,20 +15,19 @@
           <ul>
             <li class="main-header__navigator-item"><a href="#" class="main-header__navigator-item-ref">Главная</a></li>
             <li class="main-header__navigator-item"><a href="about.html" class="main-header__navigator-item-ref">О сайте</a></li>
-            <li class="main-header__navigator-item"><a href="#" class="main-header__navigator-item-ref"></a></li>
           </ul>
         </nav>
       </header>
 
       <main class="main-content">
         <div id="viewer_id" class="main-content__viewer main-content__viewer--hidden">
-          <img src="img/icon_snow.png" class="main-content__viewer-img" alt="Story image">
+          <img src="img/icon_snow.png" class="main-content__viewer-img" alt="Картинка в сторис">
           <div class="main-content__viewer-story"></div>
         </div>
         <nav class="main-content__nav">
           <ul>
-            <li id="title-may18" class="main-content__nav-item main-content__nav-item--active"> Май </li>
-            <li id="title-june18" class="main-content__nav-item"> Июнь </li>
+            <li id="title-may18" class="main-content__nav-item main-content__nav-item--active" onclick="changeMonth(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeMonth(this);" tabindex = "0"> Май </li>
+            <li id="title-june18" class="main-content__nav-item" onclick="changeMonth(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeMonth(this);" tabindex = "0"> Июнь </li>
           </ul>
         </nav>
         
@@ -39,36 +38,36 @@
               <td class="main-content__day main-content__day--empty"></td>
               <td class="main-content__day main-content__day--empty"></td>
               <td class="main-content__day main-content__day--empty"></td>
-              <td id="day-may18-24" class="main-content__day main-content__day--working">
+              <td id="day-may18-24" class="main-content__day main-content__day--working" onclick="changeDay(this);" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_snow.png" width="100" height="100" alt="Snow">
+                  <img src="img/icon_snow.png" width="100" height="100" alt="Снег">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">24</span>
                   <span class="main-content__day-ofweek">Четверг</span>
                 </div>
               </td>
-              <td id="day-may18-25" class="main-content__day main-content__day--working">
+              <td id="day-may18-25" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Дождь">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">25</span>
                   <span class="main-content__day-ofweek">Пятница</span>
                 </div>
               </td>
-              <td id="day-may18-26" class="main-content__day main-content__day--working-free">
+              <td id="day-may18-26" class="main-content__day main-content__day--working-free" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_clouds.png" width="100" height="100" alt="Clouds">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Облачно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">26</span>
                   <span class="main-content__day-ofweek">Суббота</span>
                 </div>
               </td>
-              <td id="day-may18-27" class="main-content__day main-content__day--working-free">
+              <td id="day-may18-27" class="main-content__day main-content__day--working-free" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Солнечно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">27</span>
@@ -78,37 +77,37 @@
             </tr>
             <tr><td id="between-weeks-may18-1" class="main-content__between-weeks"></td>
             </tr>
-            <tr id="week-may18-2" class="main-content__weeks">
-              <td id="day-may18-28" class="main-content__day main-content__day--working">
+            <tr id="week-may18-2" class="main-content__weeks" >
+              <td id="day-may18-28" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_clouds.png" width="100" height="100" alt="Clouds">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Облачно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">28</span>
                   <span class="main-content__day-ofweek">Понедельник</span>
                 </div>
               </td>
-              <td id="day-may18-29" class="main-content__day main-content__day--working">
+              <td id="day-may18-29" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_clouds.png" width="100" height="100" alt="Clouds">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Облачно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">29</span>
                   <span class="main-content__day-ofweek">Вторник</span>
                 </div>
               </td>
-              <td id="day-may18-30" class="main-content__day main-content__day--working">
+              <td id="day-may18-30" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Дождь">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">30</span>
                   <span class="main-content__day-ofweek">Среда</span>
                 </div>
               </td>
-              <td id="day-may18-31" class="main-content__day main-content__day--working">
+              <td id="day-may18-31" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Дождь">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">31</span>
@@ -129,27 +128,27 @@
               <td class="main-content__day main-content__day--empty"></td>
               <td class="main-content__day main-content__day--empty"></td>
               <td class="main-content__day main-content__day--empty"></td>
-              <td id="day-june18-01" class="main-content__day main-content__day--working">
+              <td id="day-june18-01" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_clouds.png" width="100" height="100" alt="Cloudy">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Облачно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">01</span>
                   <span class="main-content__day-ofweek">Пятница</span>
                 </div>
               </td>
-              <td id="day-june18-02" class="main-content__day main-content__day--working-free">
+              <td id="day-june18-02" class="main-content__day main-content__day--working-free" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Солнечно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">02</span>
                   <span class="main-content__day-ofweek">Суббота</span>
                 </div>
               </td>
-              <td id="day-june18-03" class="main-content__day main-content__day--working-free">
+              <td id="day-june18-03" class="main-content__day main-content__day--working-free" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Дождь">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">03</span>
@@ -160,54 +159,54 @@
             <tr><td id="between-weeks-june18-1" class="main-content__between-weeks"></td>
             </tr>
             <tr id="week-june18-2" class="main-content__weeks">
-              <td id="day-june18-04" class="main-content__day main-content__day--working">
+              <td id="day-june18-04" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_clouds.png" width="100" height="100" alt="Cloudy">
+                  <img src="img/icon_clouds.png" width="100" height="100" alt="Облачно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">04</span>
                   <span class="main-content__day-ofweek">Понедельник</span>
                 </div>
               </td>
-              <td id="day-june18-05" class="main-content__day main-content__day--working">
+              <td id="day-june18-05" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_rain.png" width="100" height="100" alt="Rain">
+                  <img src="img/icon_rain.png" width="100" height="100" alt="Дождь">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">05</span>
                   <span class="main-content__day-ofweek">Вторник</span>
                 </div>
               </td>
-              <td id="day-june18-06" class="main-content__day main-content__day--working">
+              <td id="day-june18-06" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Солнечно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">06</span>
                   <span class="main-content__day-ofweek">Среда</span>
                 </div>
               </td>
-              <td id="day-june18-07" class="main-content__day main-content__day--working">
+              <td id="day-june18-07" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Солнечно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">07</span>
                   <span class="main-content__day-ofweek">Четверг</span>
                 </div>
               </td>
-              <td id="day-june18-08" class="main-content__day main-content__day--working">
+              <td id="day-june18-08" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Солнечно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">08</span>
                   <span class="main-content__day-ofweek">Пятница</span>
                 </div>
               </td>
-              <td id="day-june18-09" class="main-content__day main-content__day--working">
+              <td id="day-june18-09" class="main-content__day main-content__day--working" onclick="changeDay(this);" onkeydown="if (event.keyCode == 32 || event.keyCode == 13) changeDay(this);" tabindex = "0">
                 <div class="main-content__day-img">
-                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Sunny">
+                  <img src="img/icon_sunny_clear.png" width="100" height="100" alt="Солнечно">
                 </div>
                 <div class="main-content__day-description">
                   <span class="main-content__day-date">09</span>
@@ -280,7 +279,6 @@
       </p>
     </section>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
